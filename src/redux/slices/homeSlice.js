@@ -5,7 +5,7 @@ export const fetchLatestMovies = createAsyncThunk(
   "latestMovies/fetchLatestMovies",
   async (page = 1) => {
     const response = await axios.get(
-      `https://phimapi.com/danh-sach/phim-moi-cap-nhat?page=${page}`
+      `https://xxvnapi.com/api/phim-moi-cap-nhat?page=${page}`
     );
     return response.data;
   }
